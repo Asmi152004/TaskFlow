@@ -2,7 +2,7 @@
 
 A full-stack team project and task manager. Create projects, invite teammates, and move tasks across a Kanban board with drag and drop. Access is role-based: project owners manage the team and every task, while members work on their own tasks and collaborate through comments.
 
-**Live demo:** _add your Vercel link here_ &nbsp;|&nbsp; **API:** _add your Render link here_
+**Live demo:** (https://task-flow-five-inky.vercel.app/) &nbsp;|&nbsp; **API:** (https://taskflow-api-h24t.onrender.com)
 
 **Demo login:** `demo@taskflow.com` / `Demo@1234` (after running `npm run seed`, see below)
 
