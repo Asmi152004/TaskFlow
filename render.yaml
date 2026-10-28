@@ -1,0 +1,20 @@
+# Optional Render blueprint: Render dashboard -> New -> Blueprint -> select this repository.
+# Secrets marked "sync: false" are asked for in the dashboard and are never stored in Git.
+services:
+  - type: web
+    name: taskflow-api
+    runtime: node
+    plan: free
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CLIENT_URL
+        sync: false
